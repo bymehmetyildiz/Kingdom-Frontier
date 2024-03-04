@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357b43116c867b34fa1e886fb0519ec5, type: 3}
+  m_Name: CompoundEntity
+  m_EditorClassIdentifier: 
+  city_SO:
+  - name: IronHollow
+    image: {fileID: 21300000, guid: 96e4a1d0817cbbf48b9946bf6d4346e5, type: 3}
+    index: 0
+  - name: MarinFord
+    image: {fileID: 21300000, guid: e4948ab70838efd44a26629f9612a9cd, type: 3}
+    index: 1
+  - name: WindHelm
+    image: {fileID: 21300000, guid: 7c11e7334f3d51743ad80296f3ac84ee, type: 3}
+    index: 2
+  - name: GoldLeaf
+    image: {fileID: 21300000, guid: 8bfb8a474845a194eabc26e0ab690944, type: 3}
+    index: 3
+  castle_SO:
+  - name: BorrowHill
+    image: {fileID: 21300000, guid: 10e2360f49d71bf40b74662b394609b6, type: 3}
+    index: 0
+  - name: HearthGlen
+    image: {fileID: 21300000, guid: ee7340e466801604bbc54d0b1eccaae3, type: 3}
+    index: 1
+  village_SO:
+  - name: RiverFell
+    image: {fileID: 21300000, guid: 191556b59e7869f4d8a1c18a04595b9e, type: 3}
+    index: 0
+  - name: OakShire
+    image: {fileID: 21300000, guid: 74d7fcbbff5a3cd43ad4bf5ceb989df3, type: 3}
+    index: 1
+  - name: SilverStream
+    image: {fileID: 21300000, guid: cebc8ee9791e5514aa46295077721cd4, type: 3}
+    index: 2
+  - name: StoneBrook
+    image: {fileID: 21300000, guid: 1b6b15565c210ab4096c911df315c8bb, type: 3}
+    index: 3
+  - name: WolfsWood
+    image: {fileID: 21300000, guid: 5ef7255a952330f4286cc48a060e8e05, type: 3}
+    index: 4
+  - name: EldenBridge
+    image: {fileID: 21300000, guid: a9c4c3625b9796d43b37e7b4b43eb202, type: 3}
+    index: 5
+  - name: SageStone
+    image: {fileID: 21300000, guid: de031db4fe5496746a2e2a9f9add7064, type: 3}
+    index: 6
+  - name: GrimWard
+    image: {fileID: 21300000, guid: cfcabd41ffc91014cbb355ab21e6127f, type: 3}
+    index: 7
+  - name: CrowNest
+    image: {fileID: 21300000, guid: 4f61778e125724c43a067586d98b450c, type: 3}
+    index: 8
+  - name: FrostVale
+    image: {fileID: 21300000, guid: 80776f4acd8d64d46bad4168bc891031, type: 3}
+    index: 9
