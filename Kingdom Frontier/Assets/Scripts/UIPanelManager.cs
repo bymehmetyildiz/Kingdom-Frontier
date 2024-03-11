@@ -23,6 +23,21 @@ public class UIPanelManager : MonoBehaviour
     private Vector2 startPosition;
     private Vector2 endPosition;
     [SerializeField] private TMP_Text compoundLevel;
+    [SerializeField] private TMP_Text compoundGold;
+    [SerializeField] private TMP_Text compoundMetal;
+    [SerializeField] private TMP_Text compoundWood;
+    [SerializeField] private TMP_Text compoundCement;
+    //Upgrades
+    [SerializeField] private TMP_Text barrack;
+    [SerializeField] private TMP_Text bazaar;
+    [SerializeField] private TMP_Text forge;
+    [SerializeField] private TMP_Text bakery;
+    [SerializeField] private TMP_Text shop;
+
+    //Timer
+    [SerializeField] private TMP_Text timerText;
+    
+
 
 
     public static UIPanelManager Instance
@@ -52,7 +67,6 @@ public class UIPanelManager : MonoBehaviour
     
     void Update()
     {
-        OnMouseClick();
 
         if (isPanelActive)
         {
@@ -61,60 +75,67 @@ public class UIPanelManager : MonoBehaviour
         else
         {
             panel.gameObject.SetActive(false);
-
         }
+        OnMouseClick();
 
     }
 
     private void OnMouseClick()
-    {
+    {    
+
         if (Input.GetMouseButtonDown(0))
         {
-
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.gameObject.tag == "City" && !isPanelActive)
+                if (!isPanelActive)
                 {
-                    CompoundManager compoundManager = hit.collider.gameObject.GetComponent<CompoundManager>();
-                    int compoundIndex = compoundManager.index;
-                    compoundManager.compound.CompoundInitialize(compoundIndex);
+
                     isPanelActive = true;
-                    compoundName.text = compoundManager.compound.name;
-                    image.sprite = compoundManager.compound.image;
-                    profit.text = "Yearly Profit: " + compoundManager.compound.Profit().ToString();
-                    compoundLevel.text = "City Level: " + compoundManager.level;
-                    
-
-                }
-                else if (hit.collider.gameObject.tag == "Village" && !isPanelActive)
-                {
                     CompoundManager compoundManager = hit.collider.gameObject.GetComponent<CompoundManager>();
-                    int compoundIndex = compoundManager.index;
-                    compoundManager.compound.CompoundInitialize(compoundIndex);
-                    isPanelActive = true;
-                    compoundName.text = compoundManager.compound.name;
-                    image.sprite = compoundManager.compound.image;
-                    profit.text = "Yearly Profit: " + compoundManager.compound.Profit().ToString();
-                    compoundLevel.text = "Village Level: " + compoundManager.level;
-                   
 
+
+                    timerText.text = compoundManager.timeText;
+                    compoundGold.text = "Gold: " + compoundManager.gold;
+                    compoundMetal.text = "Metal: " + compoundManager.metal;
+                    compoundWood.text = "Wood: " + compoundManager.wood;
+                    compoundCement.text = "Cement: " + compoundManager.cement;
+
+                    barrack.text = "Barrack: " + compoundManager.barrack;
+                    bazaar.text = "Bazaar: " + compoundManager.bazaar;
+                    forge.text = "Forge: " + compoundManager.forge;
+                    bakery.text = "Bakery: " + compoundManager.bakery;
+                    shop.text = "Shop: " + compoundManager.shop;
+
+                    if (hit.collider.gameObject.tag == "City")
+                    {
+                        int compoundIndex = compoundManager.index;
+                        compoundManager.compound.CompoundInitialize(compoundIndex);
+                        compoundName.text = compoundManager.compound.name;
+                        image.sprite = compoundManager.compound.image;
+                        profit.text = "Yearly Profit: " + compoundManager.compound.Profit().ToString();
+                        compoundLevel.text = "City Level: " + compoundManager.level;
+                    }
+                    else if (hit.collider.gameObject.tag == "Village")
+                    {
+                        int compoundIndex = compoundManager.index;
+                        compoundManager.compound.CompoundInitialize(compoundIndex);
+                        compoundName.text = compoundManager.compound.name;
+                        image.sprite = compoundManager.compound.image;
+                        profit.text = "Yearly Profit: " + compoundManager.compound.Profit().ToString();
+                        compoundLevel.text = "Village Level: " + compoundManager.level;
+                    }
+                    else if (hit.collider.gameObject.tag == "Castle")
+                    {
+                        int compoundIndex = compoundManager.index;
+                        compoundManager.compound.CompoundInitialize(compoundIndex);
+                        compoundName.text = compoundManager.compound.name;
+                        image.sprite = compoundManager.compound.image;
+                        profit.text = "Yearly Profit: " + compoundManager.compound.Profit().ToString();
+                        compoundLevel.text = "Castle Level: " + compoundManager.level;
+                    }
                 }
-                else if (hit.collider.gameObject.tag == "Castle" && !isPanelActive)
-                {
-                    CompoundManager compoundManager = hit.collider.gameObject.GetComponent<CompoundManager>();
-                    int compoundIndex = compoundManager.index;
-                    compoundManager.compound.CompoundInitialize(compoundIndex);
-                    isPanelActive = true;
-                    compoundName.text = compoundManager.compound.name;
-                    image.sprite = compoundManager.compound.image;
-                    profit.text = "Yearly Profit: " + compoundManager.compound.Profit().ToString();
-                    compoundLevel.text = "Castle Level: " + compoundManager.level;
-
-
-                }
-
             }
         }
     }

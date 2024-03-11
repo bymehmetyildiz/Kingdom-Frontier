@@ -11,9 +11,23 @@ public class CompoundManager : MonoBehaviour
     public int index;
     public CompoundType compoundType;
 
-    [SerializeField] private float timer;
+    [SerializeField] private float timeLeft;
     [SerializeField] private bool isBuilding;
+    public string timeText;
+
+    [Header("Compound")]
     public int level;
+    public int gold;
+    public int metal;
+    public int wood;
+    public int cement;
+
+    [Header("Upgrades")]
+    public int barrack;
+    public int bazaar;
+    public int forge;
+    public int bakery;
+    public int shop;
 
     [Header("City")]
     public int numberOfHouse;
@@ -33,6 +47,8 @@ public class CompoundManager : MonoBehaviour
     public int agriculturalTax;
     public int infrastructureExpense_V;
 
+    [Header("Build Buttons")]
+    private Buttons[] buttons;
 
     private void Awake()
     {
@@ -53,14 +69,57 @@ public class CompoundManager : MonoBehaviour
 
     void Start()
     {
-       
+        buttons = FindObjectsOfType<Buttons>();
+        isBuilding = false;
     }
 
     
     void Update()
     {
+        if (isBuilding)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+                UpdateTimer(timeLeft);
+            }
+            else
+            {
+                timeLeft = 0;
+                isBuilding = false;
+            }
+        }
+
+    }
+
+    private void UpdateTimer(float currentTime)
+    {
+        currentTime += 1;
+
+        float minute = Mathf.FloorToInt(currentTime / 60);
+        float second = Mathf.FloorToInt(currentTime % 60);
+
+        timeText = string.Format("{0:00} : {1:00}", minute, second);
+    }
+
+    public void BuildBarrack()
+    {
+        if (!isBuilding)
+        {
+            if (gold >= Compound_SO_BaseClass.Instance.barrackGold && metal >= Compound_SO_BaseClass.Instance.barrackMetal
+            && wood >= Compound_SO_BaseClass.Instance.barrackWood && cement >= Compound_SO_BaseClass.Instance.barrackCement)
+            {
+                isBuilding = true;
+            }
+        }
+
         
     }
+
+
+
+
+
 
 
 }

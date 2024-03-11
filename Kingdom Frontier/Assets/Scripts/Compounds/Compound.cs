@@ -53,8 +53,7 @@ public class Compound
             image = Compound_SO_BaseClass.Instance.village_SO[_index].image;
         }
     }
-
-
+   
 
 
 }
