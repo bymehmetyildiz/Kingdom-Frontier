@@ -110,7 +110,9 @@ public class CompoundManager : MonoBehaviour
             && wood >= Compound_SO_BaseClass.Instance.barrackWood && cement >= Compound_SO_BaseClass.Instance.barrackCement)
             {
                 isBuilding = true;
+                
             }
+           
         }
 
         
