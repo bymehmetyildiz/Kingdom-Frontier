@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public enum CompoundType { City, Castle, Village}
 
@@ -14,6 +14,7 @@ public class CompoundManager : MonoBehaviour
     [SerializeField] private float timeLeft;
     [SerializeField] private bool isBuilding;
     public string timeText;
+
 
     [Header("Compound")]
     public int level;
@@ -28,6 +29,11 @@ public class CompoundManager : MonoBehaviour
     public int forge;
     public int bakery;
     public int shop;
+    public bool barrackBuilt;
+    public bool bazaarbuilt;
+    public bool forgebuilt;
+    public bool bakeryBuilt;
+    public bool shopBuilt;
 
     [Header("City")]
     public int numberOfHouse;
@@ -70,13 +76,13 @@ public class CompoundManager : MonoBehaviour
     void Start()
     {
         buttons = FindObjectsOfType<Buttons>();
-        isBuilding = false;
+        
     }
 
     
     void Update()
     {
-        if (isBuilding)
+        if (isBuilding && !barrackBuilt)
         {
             if (timeLeft > 0)
             {
@@ -87,10 +93,19 @@ public class CompoundManager : MonoBehaviour
             {
                 timeLeft = 0;
                 isBuilding = false;
+                barrack++;
+                level++;
+
+                gold -= Compound_SO_BaseClass.Instance.barrackGold;
+                metal -= Compound_SO_BaseClass.Instance.barrackMetal;
+                wood -= Compound_SO_BaseClass.Instance.barrackWood;
+                cement -= Compound_SO_BaseClass.Instance.barrackCement;
+                barrackBuilt = true;
             }
         }
-
     }
+
+
 
     private void UpdateTimer(float currentTime)
     {
@@ -100,6 +115,7 @@ public class CompoundManager : MonoBehaviour
         float second = Mathf.FloorToInt(currentTime % 60);
 
         timeText = string.Format("{0:00} : {1:00}", minute, second);
+        
     }
 
     public void BuildBarrack()
@@ -110,13 +126,13 @@ public class CompoundManager : MonoBehaviour
             && wood >= Compound_SO_BaseClass.Instance.barrackWood && cement >= Compound_SO_BaseClass.Instance.barrackCement)
             {
                 isBuilding = true;
-                
-            }
-           
-        }
 
-        
+            }
+
+        }
     }
+
+
 
 
 
