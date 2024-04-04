@@ -15,9 +15,6 @@ public class Compound_SO
 public class City_SO:Compound_SO
 {
     public int index;
-
-   
-
 }
 
 [Serializable]
@@ -54,6 +51,7 @@ public class Compound_SO_BaseClass : ScriptableObject
         }
 
     }
+
     [Header("Soldier Barrack")]
     public int barrackGold = 500;
     public int barrackMetal = 500;

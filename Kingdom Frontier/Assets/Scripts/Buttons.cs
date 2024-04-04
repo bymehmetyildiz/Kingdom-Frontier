@@ -13,9 +13,15 @@ public class Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] private TMP_Text wood;
     [SerializeField] private TMP_Text cement;
 
+    float aa;
+
     void Start()
     {
+        aa = 6;
+        Debug.Log(aa);
         
+        aa %= 5;
+        Debug.Log(aa);
     }
 
     
@@ -25,39 +31,42 @@ public class Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             if (this.gameObject.name == "BuildBarrack")
             {
-                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.barrackGold.ToString();
-                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.barrackMetal.ToString();
-                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.barrackWood.ToString();
-                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.barrackCement.ToString();
+                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.barrackGold;
+                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.barrackMetal;
+                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.barrackWood;
+                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.barrackCement;
             }
             else if (this.gameObject.name == "BuildBazaar")
             {
-                
-                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.bazaarGold.ToString();
-                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.bazaarMetal.ToString();
-                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.bazaarWood.ToString();
-                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.bazaarCement.ToString();
+                Debug.Log("On Bazaar");   
+                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.bazaarGold;
+                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.bazaarMetal;
+                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.bazaarWood;
+                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.bazaarCement;
             }
             else if (this.gameObject.name == "BuildBlacksmith")
-            {                
-                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.forgeGold.ToString();
-                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.forgeMetal.ToString();
-                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.forgeWood.ToString();
-                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.forgeCement.ToString();
+            {
+                Debug.Log("On Forge");
+                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.forgeGold;
+                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.forgeMetal;
+                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.forgeWood;
+                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.forgeCement;
             }
             else if (this.gameObject.name == "BuildBakery")
-            {                
-                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.bakeryGold.ToString();
-                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.bakeryMetal.ToString();
-                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.bakeryWood.ToString();
-                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.bakeryCement.ToString();
+            {
+                Debug.Log("On Bakery");
+                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.bakeryGold;
+                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.bakeryMetal;
+                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.bakeryWood;
+                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.bakeryCement;
             }
             else if (this.gameObject.name == "BuildWorkshop")
-            {                
-                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.shopGold.ToString();
-                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.shopMetal.ToString();
-                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.shopWood.ToString();
-                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.shopCement.ToString();
+            {
+                Debug.Log("On Shop");
+                gold.text = "Gold: " + Compound_SO_BaseClass.Instance.shopGold;
+                metal.text = "Metal: " + Compound_SO_BaseClass.Instance.shopMetal;
+                wood.text = "Wood: " + Compound_SO_BaseClass.Instance.shopWood;
+                cement.text = "Cement: " + Compound_SO_BaseClass.Instance.shopCement;
             }
         }
         else
@@ -67,6 +76,8 @@ public class Buttons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             wood.text = "Wood: ";
             cement.text = "Cement: ";
         }
+
+        
     }
 
     public void OnPointerEnter(PointerEventData eventData)

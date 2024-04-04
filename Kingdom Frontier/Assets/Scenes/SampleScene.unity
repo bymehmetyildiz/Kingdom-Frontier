@@ -12550,7 +12550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
       propertyPath: timeLeft
-      value: 10
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
       propertyPath: lootIncome
