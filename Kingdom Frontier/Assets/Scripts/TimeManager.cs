@@ -20,7 +20,7 @@ public class TimeManager : MonoBehaviour
 
     void Update()
     {
-        dayTime += Time.deltaTime/5;
+        dayTime += Time.deltaTime;
         dayTime %= 24;
 
         UpdateLight(dayTime / 24);

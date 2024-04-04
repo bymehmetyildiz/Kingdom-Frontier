@@ -12,6 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b43116c867b34fa1e886fb0519ec5, type: 3}
   m_Name: CompoundEntity
   m_EditorClassIdentifier: 
+  barrackGold: 500
+  barrackMetal: 500
+  barrackWood: 500
+  barrackCement: 500
+  bazaarGold: 150
+  bazaarMetal: 150
+  bazaarWood: 150
+  bazaarCement: 150
+  forgeGold: 250
+  forgeMetal: 250
+  forgeWood: 250
+  forgeCement: 250
+  bakeryGold: 300
+  bakeryMetal: 300
+  bakeryWood: 300
+  bakeryCement: 300
+  shopGold: 400
+  shopMetal: 400
+  shopWood: 400
+  shopCement: 400
   city_SO:
   - name: IronHollow
     image: {fileID: 21300000, guid: 96e4a1d0817cbbf48b9946bf6d4346e5, type: 3}

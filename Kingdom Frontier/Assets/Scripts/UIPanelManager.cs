@@ -116,8 +116,6 @@ public class UIPanelManager : MonoBehaviour
                         bakery.text = "Bakery: " + compoundManager.bakery;
                         shop.text = "Shop: " + compoundManager.shop;
 
-                        
-
                         if (hit.collider.gameObject.tag == "City")
                         {
                             int compoundIndex = compoundManager.index;
