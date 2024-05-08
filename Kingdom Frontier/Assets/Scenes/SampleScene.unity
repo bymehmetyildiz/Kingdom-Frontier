@@ -460,6 +460,7 @@ RectTransform:
   m_Children:
   - {fileID: 912617200}
   - {fileID: 772579400}
+  - {fileID: 1359873837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -482,6 +483,9 @@ MonoBehaviour:
   compoundName: {fileID: 1744428815}
   image: {fileID: 1710185669}
   profit: {fileID: 264123856}
+  archerText: {fileID: 1194427143}
+  infantryText: {fileID: 202389823}
+  cavalryText: {fileID: 1366334629}
   panel: {fileID: 772579399}
   isPanelActive: 0
   managePanel: {fileID: 912617200}
@@ -1180,6 +1184,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201601048}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &202389821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 202389822}
+  - component: {fileID: 202389824}
+  - component: {fileID: 202389823}
+  m_Layer: 5
+  m_Name: Infantry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &202389822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202389821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1009341026}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -166.43}
+  m_SizeDelta: {x: 310.71, y: 71.4304}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &202389823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202389821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Infantry
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_sharedMaterial: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282533459
+  m_fontColor: {r: 0.3254902, g: 0.27450982, b: 0.25882354, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0.051879883, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &202389824
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202389821}
+  m_CullTransparentMesh: 1
 --- !u!1 &220762444
 GameObject:
   m_ObjectHideFlags: 0
@@ -3916,6 +4054,125 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659562843}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &673983381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673983382}
+  - component: {fileID: 673983386}
+  - component: {fileID: 673983385}
+  - component: {fileID: 673983384}
+  - component: {fileID: 673983383}
+  m_Layer: 0
+  m_Name: SoldierQuantity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &673983382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673983381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 921518999}
+  m_Father: {fileID: 4461514938743275562}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &673983383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673983381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211936e3804e5824a8d2649bf9fecd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 4461514938743275562}
+  offset: {x: 0, y: 5, z: 0}
+  compoundName: {fileID: 921519000}
+  soldierQuantity: 15
+--- !u!114 &673983384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673983381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &673983385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673983381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1960, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &673983386
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673983381}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &675401186
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,7 +4394,6 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
-  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -4222,18 +4478,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
---- !u!114 &705507996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b0752fe30622b64baa81baa2b44b350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &732824093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4619,6 +4863,7 @@ RectTransform:
   - {fileID: 1710185668}
   - {fileID: 1744428817}
   - {fileID: 264123858}
+  - {fileID: 1009341026}
   - {fileID: 1481695625}
   - {fileID: 1011313877}
   m_Father: {fileID: 38389015}
@@ -5442,6 +5687,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912617199}
   m_CullTransparentMesh: 1
+--- !u!1 &921518998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921518999}
+  - component: {fileID: 921519001}
+  - component: {fileID: 921519000}
+  m_Layer: 0
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &921518999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921518998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 673983382}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &921519000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921518998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_sharedMaterial: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &921519001
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921518998}
+  m_CullTransparentMesh: 1
 --- !u!1 &946260606
 GameObject:
   m_ObjectHideFlags: 0
@@ -6124,6 +6503,143 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976658579}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1009341025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009341026}
+  - component: {fileID: 1009341028}
+  - component: {fileID: 1009341027}
+  m_Layer: 5
+  m_Name: SoldierQuantity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1009341026
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009341025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1194427142}
+  - {fileID: 202389822}
+  - {fileID: 1366334628}
+  m_Father: {fileID: 772579400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37, y: -589}
+  m_SizeDelta: {x: 310.71, y: 71.4304}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1009341027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009341025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Soldiers
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_sharedMaterial: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282533459
+  m_fontColor: {r: 0.3254902, g: 0.27450982, b: 0.25882354, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0.051879883, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1009341028
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009341025}
+  m_CullTransparentMesh: 1
 --- !u!1 &1011313876
 GameObject:
   m_ObjectHideFlags: 0
@@ -7162,6 +7678,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184869681}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1194427141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194427142}
+  - component: {fileID: 1194427144}
+  - component: {fileID: 1194427143}
+  m_Layer: 5
+  m_Name: Archer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1194427142
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194427141}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1009341026}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -95}
+  m_SizeDelta: {x: 310.71, y: 71.4304}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1194427143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194427141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Archers
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_sharedMaterial: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282533459
+  m_fontColor: {r: 0.3254902, g: 0.27450982, b: 0.25882354, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0.051879883, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1194427144
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194427141}
+  m_CullTransparentMesh: 1
 --- !u!1 &1203343501
 GameObject:
   m_ObjectHideFlags: 0
@@ -8099,6 +8749,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352243216}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1359873836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359873837}
+  - component: {fileID: 1359873839}
+  - component: {fileID: 1359873838}
+  m_Layer: 5
+  m_Name: DayCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1359873837
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359873836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 38389015}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1359873838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359873836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_sharedMaterial: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1359873839
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359873836}
+  m_CullTransparentMesh: 1
 --- !u!1 &1366237633
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,6 +8989,142 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366237633}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1366334627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366334628}
+  - component: {fileID: 1366334630}
+  - component: {fileID: 1366334629}
+  m_Layer: 5
+  m_Name: Cavalry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1366334628
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366334627}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1009341026}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -237.86}
+  m_SizeDelta: {x: 310.71, y: 71.4304}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1366334629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366334627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Cavalry
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_sharedMaterial: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282533459
+  m_fontColor: {r: 0.3254902, g: 0.27450982, b: 0.25882354, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0.051879883, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1366334630
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366334627}
+  m_CullTransparentMesh: 1
 --- !u!1 &1370539419
 GameObject:
   m_ObjectHideFlags: 0
@@ -10401,8 +11321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.0802, y: -2.0803}
-  m_SizeDelta: {x: 650, y: 650}
+  m_AnchoredPosition: {x: -161.45996, y: 161.45985}
+  m_SizeDelta: {x: 322.92, y: 322.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710185669
 MonoBehaviour:
@@ -10697,6 +11617,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   directionalLight: {fileID: 705507994}
   dayTime: 0
+  dayCountText: {fileID: 1359873838}
 --- !u!4 &1736841638
 Transform:
   m_ObjectHideFlags: 0
@@ -12313,11 +13234,23 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2856847494782990764, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856847494782990764, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
       propertyPath: agriculturalTax
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2856847494782990764, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856847494782990764, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
       propertyPath: numberOfFarmers
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856847494782990764, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
+      propertyPath: infantryQuantity
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2856847494782990764, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
@@ -12343,6 +13276,10 @@ PrefabInstance:
     - target: {fileID: 5129905244688342587, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
       propertyPath: m_TagString
       value: Village
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446770396291867038, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8425365996638140872, guid: 8846089169ef0d645a9c566fa66d872d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12438,8 +13375,20 @@ PrefabInstance:
       value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 371808316029378106, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
+      propertyPath: archerQuantity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 371808316029378106, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
+      propertyPath: cavalryQuantity
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 371808316029378106, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
       propertyPath: houseTaxPerYear
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 371808316029378106, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
+      propertyPath: infantryQuantity
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 371808316029378106, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
       propertyPath: infrastructureExpense_C
@@ -12455,6 +13404,10 @@ PrefabInstance:
       objectReference: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
     - target: {fileID: 3025147279761398737, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231956398084271111, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8472310814590095502, guid: bb28b99fff9043c4992606711ab903d4, type: 3}
@@ -12550,6 +13503,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1483046009866232671, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5226161700248725359, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
       propertyPath: m_Name
       value: Oakshire
@@ -12599,12 +13556,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8074646037060339186, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8074646037060339186, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
       propertyPath: agriculturalTax
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8074646037060339186, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8074646037060339186, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
       propertyPath: numberOfFarmers
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8074646037060339186, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8074646037060339186, guid: a4ae8c0f2b9c99245825f45e34b107c3, type: 3}
       propertyPath: infrastructureExpense_V
@@ -12682,6 +13651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4680087565297989068, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
       propertyPath: gold
       value: 1500
@@ -12715,8 +13688,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
       propertyPath: equipmentExpense
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4799655281051313433, guid: 8531987fbb1f2b64ead2768f8ef7bcbc, type: 3}
       propertyPath: numberOfSoldiers
@@ -12862,8 +13847,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2429999203664369055, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
+      propertyPath: archerQuantity
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429999203664369055, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
+      propertyPath: cavalryQuantity
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429999203664369055, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
       propertyPath: equipmentExpense
       value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429999203664369055, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
+      propertyPath: infantryQuantity
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2429999203664369055, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
       propertyPath: numberOfSoldiers
@@ -12876,6 +13873,10 @@ PrefabInstance:
     - target: {fileID: 2429999203664369055, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
       propertyPath: infrastructureExpense_Ca
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414027296610046583, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6851827607702781186, guid: 37bbb8ac3cdf14c429748d2e14e8f35c, type: 3}
       propertyPath: m_Name
@@ -12898,6 +13899,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1412916147}
     m_Modifications:
+    - target: {fileID: 2843035038288481426, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
       propertyPath: gold
       value: 400
@@ -12927,12 +13932,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
       propertyPath: agriculturalTax
       value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
       propertyPath: numberOfFarmers
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4176811281037062507, guid: c3f6e2241be735b469e4ee2244c4dc38, type: 3}
       propertyPath: infrastructureExpense_V
@@ -13106,6 +14123,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2610244992761410312, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
       propertyPath: gold
       value: 350
@@ -13135,12 +14156,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
       propertyPath: agriculturalTax
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
       propertyPath: numberOfFarmers
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6122716501063008802, guid: 34f0af184ee278b49a34d8c5cfe15331, type: 3}
       propertyPath: infrastructureExpense_V
@@ -13545,6 +14578,7 @@ GameObject:
   - component: {fileID: 4461514938743275567}
   - component: {fileID: 4461514938743275566}
   - component: {fileID: 4461514938743275565}
+  - component: {fileID: 4461514938743275569}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -13985,6 +15019,7 @@ Transform:
   m_Children:
   - {fileID: 4461514938743275544}
   - {fileID: 4461514938743275564}
+  - {fileID: 673983382}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4461514938743275564
@@ -14017,7 +15052,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14035,6 +15070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890c70b0a54b4fe48b5d811ffbdc64d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openMenu: 0
+  compoundManager: {fileID: 0}
 --- !u!195 &4461514938743275567
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14073,6 +15110,33 @@ Transform:
   - {fileID: 4461514938743275526}
   m_Father: {fileID: 4461514938743275524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &4461514938743275569
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461514938743249994}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &4461514938743275570
 Transform:
   m_ObjectHideFlags: 0
@@ -14272,16 +15336,32 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7458908164711997961, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7458908164711997961, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
       propertyPath: agriculturalTax
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7458908164711997961, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7458908164711997961, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
       propertyPath: numberOfFarmers
       value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7458908164711997961, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7458908164711997961, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
       propertyPath: infrastructureExpense_V
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829066513017538477, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8845641287257537465, guid: 0e0f9d6310f07254fadd329e47813382, type: 3}
       propertyPath: m_Name
@@ -14356,6 +15436,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7615054741711382286, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7890821443858287305, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
       propertyPath: m_Name
       value: Riverfell
@@ -14393,12 +15477,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8768412795614365521, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768412795614365521, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
       propertyPath: agriculturalTax
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8768412795614365521, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768412795614365521, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
       propertyPath: numberOfFarmers
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768412795614365521, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8768412795614365521, guid: cb339146b1c8aab41bf5e65aba0792c5, type: 3}
       propertyPath: infrastructureExpense_V
@@ -14477,6 +15573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5266830493021064571, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
       propertyPath: gold
       value: 450
@@ -14506,12 +15606,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
       propertyPath: agriculturalTax
       value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
       propertyPath: numberOfFarmers
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6746676664937241512, guid: a384b41d34ffe904f8a9b17adeffea3e, type: 3}
       propertyPath: infrastructureExpense_V
@@ -14571,8 +15683,20 @@ PrefabInstance:
       value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 2500030681724269165, guid: 140644c07f50f764baecf0d2112f74e6, type: 3}
+      propertyPath: archerQuantity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500030681724269165, guid: 140644c07f50f764baecf0d2112f74e6, type: 3}
+      propertyPath: cavalryQuantity
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500030681724269165, guid: 140644c07f50f764baecf0d2112f74e6, type: 3}
       propertyPath: houseTaxPerYear
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500030681724269165, guid: 140644c07f50f764baecf0d2112f74e6, type: 3}
+      propertyPath: infantryQuantity
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 2500030681724269165, guid: 140644c07f50f764baecf0d2112f74e6, type: 3}
       propertyPath: infrastructureExpense_C
@@ -14638,6 +15762,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: City
       objectReference: {fileID: 0}
+    - target: {fileID: 8933067985690146726, guid: 140644c07f50f764baecf0d2112f74e6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14692,12 +15820,28 @@ PrefabInstance:
       value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 611094881667357794, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
+      propertyPath: archerQuantity
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 611094881667357794, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
+      propertyPath: cavalryQuantity
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 611094881667357794, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
       propertyPath: houseTaxPerYear
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 611094881667357794, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
+      propertyPath: infantryQuantity
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 611094881667357794, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
       propertyPath: infrastructureExpense_C
       value: 1250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346322611982476339, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6518949950726472672, guid: ba1e7981b9fe4d044ad4153f32a97ec0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14772,6 +15916,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1412916147}
     m_Modifications:
+    - target: {fileID: 1215384494941984975, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
       propertyPath: gold
       value: 750
@@ -14801,12 +15949,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
       propertyPath: agriculturalTax
       value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
       propertyPath: numberOfFarmers
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1293894071319912761, guid: 74bcb0591c6975445985b9097725cda8, type: 3}
       propertyPath: infrastructureExpense_V
@@ -14914,12 +16074,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1763658311741929649, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763658311741929649, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
       propertyPath: agriculturalTax
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1763658311741929649, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763658311741929649, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
       propertyPath: numberOfFarmers
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763658311741929649, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1763658311741929649, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
       propertyPath: infrastructureExpense_V
@@ -14985,6 +16157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6084631715928138191, guid: 6d4dc905e70d2184aa1bdcb792283d2b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15008,6 +16184,10 @@ PrefabInstance:
       objectReference: {fileID: -5816295520501628438, guid: 4858cf8b4afc5274cad39b0260fd585f, type: 2}
     - target: {fileID: 1323078724240851542, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570714134909520387, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
@@ -15039,12 +16219,24 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
+      propertyPath: archerQuantity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
       propertyPath: agriculturalTax
       value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
+      propertyPath: cavalryQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
       propertyPath: numberOfFarmers
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
+      propertyPath: infantryQuantity
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5409620855964087326, guid: 36b8576391d2a1747b8a2f0b3820d4ad, type: 3}
       propertyPath: infrastructureExpense_V
@@ -15152,8 +16344,20 @@ PrefabInstance:
       value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 346125239790635314, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
+      propertyPath: archerQuantity
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 346125239790635314, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
+      propertyPath: cavalryQuantity
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 346125239790635314, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
       propertyPath: houseTaxPerYear
       value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 346125239790635314, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
+      propertyPath: infantryQuantity
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 346125239790635314, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
       propertyPath: infrastructureExpense_C
@@ -15178,6 +16382,10 @@ PrefabInstance:
     - target: {fileID: 5132677464455222145, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
       propertyPath: m_TagString
       value: City
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457604914011947437, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8768968546477694495, guid: f5a0ac91ab03e284498a318f90f27a4d, type: 3}
       propertyPath: m_LocalPosition.x

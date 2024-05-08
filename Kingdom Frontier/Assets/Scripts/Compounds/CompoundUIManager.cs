@@ -8,11 +8,22 @@ public class CompoundUIManager : MonoBehaviour
     public Transform target;
     public Vector3 offset;
     public TMP_Text compoundName;
+    public int soldierQuantity = 15;
 
 
     private void Start()
     {
-        compoundName.text = target.gameObject.name.ToString();
+        if (target.gameObject.name == "Player")
+        {
+            compoundName.text = soldierQuantity.ToString();
+
+        }
+        else
+        {
+            compoundName.text = target.gameObject.name.ToString();
+
+        }
+
     }
     void FixedUpdate()
     {

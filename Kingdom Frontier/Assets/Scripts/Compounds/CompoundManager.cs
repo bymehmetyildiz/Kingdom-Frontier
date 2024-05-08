@@ -22,6 +22,9 @@ public class CompoundManager : MonoBehaviour
     public int metal;
     public int wood;
     public int cement;
+    public int archerQuantity;
+    public int infantryQuantity;
+    public int cavalryQuantity;
 
     [Header("Upgrades")]
     public int barrack;
