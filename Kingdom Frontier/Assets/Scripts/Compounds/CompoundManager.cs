@@ -11,6 +11,8 @@ public class CompoundManager : MonoBehaviour
     public int index;
     public CompoundType compoundType;
 
+    private bool recourcesAdded;
+
     [SerializeField] private float timeLeft;
     [SerializeField] private bool isBuilding;
     public string timeText;
@@ -106,9 +108,25 @@ public class CompoundManager : MonoBehaviour
                 barrackBuilt = true;
             }
         }
+
+        
+        if (TimeManager.Instance.dayCounter % 5 == 0)
+        {
+            if (!recourcesAdded)
+            {
+                gold += 5;
+                metal += 5;
+                wood += 5;
+                cement += 5;
+                recourcesAdded = true;
+            }
+           
+        }
+        else
+        {
+            recourcesAdded = false;
+        }
     }
-
-
 
     private void UpdateTimer(float currentTime)
     {
